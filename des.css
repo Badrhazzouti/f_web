@@ -75,12 +75,31 @@ section{
 	font-size: 1.4em;
 	font-weight: 500;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
 }
 
-.main a{
-	color: black;
+.main-btn{
+	color: white;
+	background-color: #9C8073;
+	font-size: 1.1em;
+	font-weight: 600;
+	display: inline-block;
+	padding: 0.9346em 2.1875em;
+	letter-spacing: 1px;
+	border-radius: 15px;
 	text-decoration: none;
-	font-size: 5em;
-	font-weight: 200;
+	margin-bottom: 40px;
+	transition: 0.7s ease;
+}
+
+.main-btn:hover{
+	background-color: rgb(116, 66, 66);
+	transform: scale(1.1);
+}
+
+.social-icons a{
+	color: black;
+	font-size: 1.7em;
+	padding-right: 30px;
 }
