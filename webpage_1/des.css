@@ -192,7 +192,11 @@ section{
 	width: 75%;
 }
 
-.project-info a{
+.project-info{
+	padding: 1em;
+}
+
+/* .project-info a{
 	color: rgb(86, 74, 74);
 	text-decoration: none;
 	display: flex;
@@ -201,16 +205,34 @@ section{
 	/* padding-bottom: 10px; */
 
 	/* text-align: left; */
-}
+/* } */ 
 
 .project-title{
 	display: flex;
-	justify-content: flex-end;
-	padding: 20px;
+	justify-content: space-between;
+	/* padding: 20px; */
+	margin-top: 10px;
 	font-size: 1.1em;
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
-.project-info a:hover{
+/* .project-info a:hover{
 	color: white;
 	margin-top: 20px;
+} */
+
+.more-details{
+	display: flex;
+	text-decoration: none;
+	color: rgb(73, 57, 51);
+	padding-right: 10px;
+}
+
+.more-details:hover{
+	color: white;
+}
+
+.project-category{
+	font-size: 0.9em;
 }
