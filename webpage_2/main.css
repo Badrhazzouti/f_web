@@ -75,7 +75,7 @@ h1 {
 }
 
 .cta-btns {
-	margin: 5em 0;
+	margin: 2em 0;
 }
 
 .cta-btns, .secondary-cta { 
@@ -84,7 +84,7 @@ h1 {
 }
 
 .primary-cta {
-	background-color: grey;
+	background-color: rgb(192, 100, 100);
 	font-size: 1.8rem;
 	font-weight: bold;
 	color: black;
@@ -105,4 +105,96 @@ h1 {
 
 .secondary-cta svg {
 	width: 20px;
+}
+
+.news {
+	display: flex;
+	gap: 3em;
+	padding: 5em;
+	border: 1px, solid black;
+	border-radius: 1.8em;
+	position: relative;
+}
+
+.news::before {
+	position: absolute;
+	content: "";
+	background: url('/images/sparkles.svg');
+	width: 100px;
+	height: 100px;
+	top: -20px;
+	left: -20px;
+	z-index: 2; 
+}
+
+p.employees {
+	font-size: 1.4rem;
+	margin: 0;
+	line-height: 100%;
+}
+
+p.details {
+	font-size: 1.4rem;
+	margin: 0;
+}
+
+.right-col {
+	display: grid;
+	gap: 2.3em;
+	grid-template-columns: repeat(2, auto);
+	grid-template-areas: 
+		"left right"
+		"left bottom";
+}
+
+.card {
+	background-color: grey;
+	border-radius: .8em;
+	padding: 1.1em;
+	display: flex;
+	align-items: end;
+	background-size: 150%;
+}
+
+.card1 {
+	grid-area: left;
+	background-image: url(/images/chair.jpg );
+}
+
+.card2 {
+	background-image: url(/images/img2.jpg );
+}
+
+.card3 {
+	background-image: url(/images/img3.jpg );
+}
+
+.card-details {
+	background-color: white;
+	font-size: 15px;
+	border-radius: .8em;
+	padding: 1em;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product-title {
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	font-family:'Playfair Display';
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.product-title:hover {
+	color: grey;
+}
+
+.product-price {
+	font-size: 20px;
+	font-weight: 25px;
 }
